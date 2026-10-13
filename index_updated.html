@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#123d32" />
+<title>Ghumi — Your trip, thoughtfully planned</title>
+<meta name="description" content="Build a complete trip around your budget, destination and days. Ghumi brings stays, transport, food and experiences into one thoughtful itinerary." />
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#123d32;--forest2:#1b5947;--lime:#d7f36b;--cream:#f7f6ef;--ink:#1d2b25;--muted:#69756d;--line:#e4e7de;--white:#fff;--coral:#f08a68;--shadow:0 18px 55px rgba(19,51,41,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}h1,h2,h3,.brand{font-family:Manrope,sans-serif;letter-spacing:-.04em}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:25px;font-weight:800;display:flex;align-items:center;gap:9px;color:var(--forest)}.brand-mark{display:grid;place-items:center;width:35px;height:35px;border-radius:12px;background:var(--lime);font-size:20px}.nav{display:flex;gap:30px;color:#536159;font-size:14px}.nav a:hover{color:var(--forest)}.nav-cta,.btn{border:0;border-radius:999px;background:var(--forest);color:white;padding:13px 20px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--forest2);transform:translateY(-1px)}.btn.lime{background:var(--lime);color:var(--forest)}.btn.lime:hover{background:#c9e75a}.hero{display:grid;grid-template-columns:1fr 1.02fr;gap:46px;align-items:center;padding:45px 0 72px}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#e9efd9;border:1px solid #dce7c6;color:var(--forest);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.03em}.dot{width:7px;height:7px;border-radius:50%;background:#6b9b52}.hero h1{font-size:clamp(44px,5.6vw,70px);line-height:1.04;margin:20px 0 20px;color:var(--forest);max-width:620px}.hero h1 em{font-style:normal;color:#7a9a42}.hero p{font-size:17px;line-height:1.7;color:var(--muted);max-width:490px;margin:0 0 27px}.hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.text-link{font-size:14px;font-weight:700;color:var(--forest);padding:12px}.hero-note{display:flex;align-items:center;gap:11px;margin-top:27px;color:var(--muted);font-size:12px}.avatars{display:flex}.avatar{width:28px;height:28px;border:2px solid var(--cream);border-radius:50%;margin-left:-7px;background:#e9bd93;display:grid;place-items:center;font-size:12px}.avatar:first-child{margin-left:0;background:#b9d6a2}.avatar:nth-child(2){background:#efb09c}.avatar:nth-child(3){background:#e9d58e}.hero-visual{position:relative;min-height:500px}.hero-photo{height:480px;border-radius:28px;overflow:hidden;position:absolute;inset:0 0 0 22px;background:#d9e2ce}.hero-photo img{width:100%;height:100%;object-fit:cover}.photo-shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(5,34,25,.65))}.photo-label{position:absolute;bottom:25px;left:28px;color:white}.photo-label small{font-size:12px;opacity:.85}.photo-label h3{font-size:25px;margin:5px 0}.floating-card{position:absolute;background:white;border-radius:18px;padding:16px 18px;box-shadow:var(--shadow);z-index:2}.budget-card{left:0;top:52px;width:180px}.floating-card small{color:var(--muted);font-size:11px}.floating-card strong{display:block;font-family:Manrope,sans-serif;font-size:22px;margin:5px 0;color:var(--forest)}.progress{height:6px;border-radius:9px;background:#e9eee3;overflow:hidden;margin-top:11px}.progress span{display:block;width:78%;height:100%;background:#9ec653;border-radius:9px}.route-card{right:-10px;bottom:33px;width:205px;display:flex;gap:10px;align-items:center}.route-icon{width:42px;height:42px;border-radius:13px;background:#edf3df;display:grid;place-items:center;font-size:20px}.route-card strong{font-size:14px;margin:0}.route-card small{font-size:11px}.section{padding:75px 0}.section.white{background:white}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:#78904f;font-weight:800}.section h2{font-size:clamp(30px,4vw,46px);line-height:1.12;color:var(--forest);margin:10px 0 0}.section-head p{max-width:400px;line-height:1.65;color:var(--muted);margin:0;font-size:14px}.trip-builder{display:grid;grid-template-columns:.8fr 1.2fr;background:white;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}.builder-form{padding:30px}.builder-form h3{font-size:23px;color:var(--forest);margin:0 0 7px}.builder-form>p{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 24px}.field{margin-bottom:17px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:8px;color:#45554a}.field input,.field select{width:100%;border:1px solid #dce2d8;border-radius:12px;padding:13px 14px;background:#fbfcf8;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#82a34c;box-shadow:0 0 0 3px #dff0bc}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.range-label{display:flex;justify-content:space-between;align-items:center}.range-label output{color:var(--forest);font-weight:800}.builder-form input[type=range]{padding:0;accent-color:var(--forest);box-shadow:none}.builder-form .btn{width:100%;padding:15px}.fine-print{font-size:11px;color:#89928b;text-align:center;margin-top:11px}.itinerary-preview{background:#f1f4e9;padding:30px;min-width:0}.preview-top{display:flex;justify-content:space-between;align-items:start;gap:15px}.preview-top h3{margin:0;color:var(--forest);font-size:22px}.preview-top p{margin:7px 0 0;font-size:12px;color:var(--muted)}.status{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;background:#dcebb9;color:#41622a;padding:7px 9px;border-radius:999px;white-space:nowrap}.cost-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0}.cost-box{background:white;border:1px solid #e5e9de;border-radius:14px;padding:14px}.cost-box small{font-size:10px;color:var(--muted)}.cost-box strong{display:block;font-family:Manrope,sans-serif;font-size:19px;color:var(--forest);margin-top:6px}.day-list{display:grid;gap:10px}.day{background:white;border:1px solid #e5e9de;border-radius:14px;padding:14px;display:grid;grid-template-columns:43px 1fr auto;gap:12px;align-items:center}.day-number{width:42px;height:42px;background:#e9efd9;border-radius:12px;display:grid;place-items:center;font-size:12px;font-weight:800;color:var(--forest)}.day h4{margin:0 0 4px;font-size:13px}.day p{margin:0;font-size:11px;color:var(--muted);line-height:1.5}.day .price{font-size:12px;font-weight:800;color:var(--forest);white-space:nowrap}.disclaimer{font-size:10px;color:#7e897f;line-height:1.5;margin-top:14px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#f7f8f1;border:1px solid var(--line);border-radius:20px;padding:25px}.feature-icon{height:46px;width:46px;display:grid;place-items:center;background:#e5efce;border-radius:14px;font-size:22px}.feature h3{font-size:19px;color:var(--forest);margin:18px 0 9px}.feature p{font-size:13px;color:var(--muted);line-height:1.7;margin:0}.destinations{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.destination{position:relative;height:310px;border-radius:20px;overflow:hidden;color:white;background:#c8d4c0;cursor:pointer}.destination img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.destination:hover img{transform:scale(1.05)}.destination:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(6,28,22,.75))}.dest-info{position:absolute;z-index:1;bottom:20px;left:20px;right:20px}.dest-info small{font-size:11px;opacity:.9}.dest-info h3{font-size:25px;margin:5px 0}.dest-info span{font-size:12px}.dest-arrow{float:right;border:1px solid #ffffff80;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step{border-top:1px solid var(--line);padding-top:20px}.step-number{font-size:12px;font-weight:800;color:#7d994c;letter-spacing:.1em}.step h3{font-size:20px;color:var(--forest);margin:12px 0 8px}.step p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}.cta-band{background:var(--forest);border-radius:26px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:24px;color:white}.cta-band h2{font-size:clamp(30px,4vw,44px);max-width:550px;margin:0 0 12px;line-height:1.1}.cta-band p{margin:0;color:#c2d0c7;font-size:14px}.footer{padding:35px 0 25px}.footer-main{display:flex;justify-content:space-between;gap:25px;align-items:center;padding-bottom:25px;border-bottom:1px solid var(--line)}.footer p{color:var(--muted);font-size:12px;line-height:1.6}.footer-links{display:flex;gap:20px;font-size:12px;color:var(--muted)}.copyright{display:flex;justify-content:space-between;color:#879188;font-size:11px;padding-top:17px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:var(--forest);color:white;padding:13px 18px;border-radius:999px;font-size:13px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.25s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}.mobile-menu{display:none}
+@media(max-width:850px){.nav{gap:15px}.hero{grid-template-columns:1fr;gap:25px;padding-top:25px}.hero-copy{max-width:650px}.hero-visual{min-height:440px}.hero-photo{height:420px;left:15px}.trip-builder{grid-template-columns:1fr}.features,.destinations{grid-template-columns:repeat(2,1fr)}.destination:last-child{display:none}.section-head{align-items:start;flex-direction:column}.cta-band{padding:35px;align-items:start;flex-direction:column}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.topbar{height:68px}.nav{display:none}.nav-cta{padding:11px 14px;font-size:12px}.brand{font-size:22px}.hero{padding:25px 0 45px}.hero h1{font-size:47px}.hero p{font-size:15px}.hero-visual{min-height:365px}.hero-photo{height:340px;left:10px;border-radius:22px}.budget-card{top:20px;width:150px;padding:13px}.budget-card strong{font-size:19px}.route-card{right:0;bottom:4px;width:185px;padding:12px}.section{padding:52px 0}.builder-form,.itinerary-preview{padding:20px}.cost-summary{gap:6px}.cost-box{padding:10px}.cost-box strong{font-size:16px}.day{grid-template-columns:37px 1fr;gap:10px}.day-number{width:36px;height:36px}.day .price{grid-column:2}.features,.destinations,.steps{grid-template-columns:1fr}.destination{height:260px}.destination:last-child{display:block}.feature{padding:21px}.cta-band{padding:28px 22px}.footer-main,.copyright{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.section-head p{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="#home" aria-label="Ghumi home"><span class="brand-mark">↗</span> ghumi<span style="color:#91ad54">.</span></a>
+  <nav class="nav" aria-label="Main navigation"><a href="#how">How it works</a><a href="#planner">Trip planner</a><a href="#discover">Discover</a><a href="#why">Why Ghumi</a></nav>
+  <a class="nav-cta" href="#planner">Plan my trip <span>↗</span></a>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow"><span class="dot"></span> LESS PLANNING. MORE WANDERING.</span>
+    <h1>Your next trip.<br><em>All figured out.</em></h1>
+    <p>Tell Ghumi your budget, destination and days. Get a thoughtful trip plan that brings transport, stays, food and experiences together — without the tab-hopping.</p>
+    <div class="hero-actions"><a class="btn" href="#planner">Build my itinerary <span>↗</span></a><a class="text-link" href="#how">See how it works ↓</a></div>
+    <div class="hero-note"><div class="avatars"><span class="avatar">✦</span><span class="avatar">☀</span><span class="avatar">⌁</span></div><span>Made for real budgets and better getaways.</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="floating-card budget-card"><small>YOUR TRIP BUDGET</small><strong>₹8,000</strong><small>3 days · Bengaluru</small><div class="progress"><span></span></div></div>
+    <div class="hero-photo"><img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=85" alt="Lush tropical landscape with winding river" /><div class="photo-shade"></div><div class="photo-label"><small>YOUR NEXT CHAPTER</small><h3>Somewhere wonderful.</h3></div></div>
+    <div class="floating-card route-card"><span class="route-icon">✦</span><span><strong>One plan. Every detail.</strong><small>Stay · Travel · Eat · Explore</small></span></div>
+  </div>
+</section>
+<section class="section white" id="planner">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">Your trip, your rules</div><h2>Dream it. We’ll map it.</h2></div><p>Start with the things that matter most. Your sample plan updates around your budget, destination and time away.</p></div>
+  <div class="trip-builder">
+   <form class="builder-form" id="tripForm">
+    <h3>Build your getaway</h3><p>A few details are all we need to get you started.</p>
+    <div class="field"><label for="destination">Where do you want to go?</label><select id="destination"><option value="Goa">Goa</option><option value="Coorg">Coorg</option><option value="Udaipur">Udaipur</option><option value="Mysuru">Mysuru</option><option value="Hampi">Hampi</option><option value="Rishikesh">Rishikesh</option></select></div>
+    <div class="field-row"><div class="field"><label for="origin">Starting from</label><select id="origin"><option>Bengaluru</option><option>Mumbai</option><option>Delhi</option><option>Hyderabad</option><option>Pune</option></select></div><div class="field"><label for="days">Duration</label><select id="days"><option value="2">2 days</option><option value="3" selected>3 days</option><option value="4">4 days</option><option value="5">5 days</option></select></div></div>
+    <div class="field"><div class="range-label"><label for="budget">Total budget</label><output id="budgetOutput">₹8,000</output></div><input id="budget" type="range" min="3000" max="60000" step="500" value="8000" /></div>
+    <div class="field"><label for="travelStyle">Your travel style</label><select id="travelStyle"><option value="budget">Budget-friendly & local</option><option value="balanced">A little comfort, a little adventure</option><option value="comfort">Comfort-first & curated</option></select></div>
+    <button class="btn" type="submit">Generate my sample plan <span>↗</span></button>
+    <div class="fine-print">A planning preview — prices are estimates, not live quotes.</div>
+   </form>
+   <div class="itinerary-preview" aria-live="polite">
+    <div class="preview-top"><div><h3 id="previewTitle">Your 3-day Goa escape</h3><p id="previewSub">Starting in Bengaluru · Budget-friendly & local</p></div><span class="status">Sample plan</span></div>
+    <div class="cost-summary"><div class="cost-box"><small>EST. TOTAL</small><strong id="totalCost">₹7,600</strong></div><div class="cost-box"><small>PER DAY</small><strong id="perDay">₹2,533</strong></div><div class="cost-box"><small>BUFFER</small><strong id="buffer">₹400</strong></div></div>
+    <div class="day-list" id="dayList">
+     <div class="day"><span class="day-number">DAY 01</span><div><h4>Arrive & find your rhythm</h4><p>Overland travel · Check-in · Sunset by the beach</p></div><span class="price">₹2,800</span></div>
+     <div class="day"><span class="day-number">DAY 02</span><div><h4>Local finds & slow exploring</h4><p>Breakfast spot · Heritage lanes · Beach time</p></div><span class="price">₹2,500</span></div>
+     <div class="day"><span class="day-number">DAY 03</span><div><h4>One last wander</h4><p>Market stroll · Local lunch · Return journey</p></div><span class="price">₹2,300</span></div>
+    </div>
+    <p class="disclaimer" id="planNote">Estimates are illustrative and may not reflect real-time transport fares, accommodation availability, taxes or seasonal pricing. Confirm all details before booking.</p>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section" id="why"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">A better way to get away</div><h2>Less juggling.<br>More journey.</h2></div><p>Travel planning should feel like the start of your holiday — not another job on your to-do list.</p></div>
+ <div class="features">
+  <article class="feature"><div class="feature-icon">₹</div><h3>Your budget comes first</h3><p>Set your spending ceiling upfront. Shape the whole trip around what you can spend, not the other way around.</p></article>
+  <article class="feature"><div class="feature-icon">⌁</div><h3>One connected itinerary</h3><p>Bring transport, stays, food and experiences into one coherent plan, with less back-and-forth between tabs.</p></article>
+  <article class="feature"><div class="feature-icon">✦</div><h3>Time well spent</h3><p>Choose a trip style that suits you, with a sensible flow that leaves more room for the moments you came for.</p></article>
+ </div>
+</div></section>
+<section class="section white" id="discover"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">A little inspiration</div><h2>Where will you wander?</h2></div><p>From laid-back coastlines to misty green escapes, pick a place and start imagining.</p></div>
+ <div class="destinations">
+  <article class="destination" data-dest="Goa" tabindex="0" role="button" aria-label="Plan a trip to Goa"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=85" alt="Palm trees and beach in Goa" loading="lazy"><div class="dest-info"><small>SUN, SEA & SLOW DAYS</small><h3>Goa <span class="dest-arrow">↗</span></h3><span>Beach walks · Local cafés · Coastal roads</span></div></article>
+  <article class="destination" data-dest="Coorg" tabindex="0" role="button" aria-label="Plan a trip to Coorg"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85" alt="Misty green forest in the Western Ghats" loading="lazy"><div class="dest-info"><small>GREEN & GROUNDED</small><h3>Coorg <span class="dest-arrow">↗</span></h3><span>Coffee estates · Forest trails · Fresh air</span></div></article>
+  <article class="destination" data-dest="Udaipur" tabindex="0" role="button" aria-label="Plan a trip to Udaipur"><img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=85" alt="Lake and palace architecture in Udaipur" loading="lazy"><div class="dest-info"><small>HERITAGE & HORIZONS</small><h3>Udaipur <span class="dest-arrow">↗</span></h3><span>Lake views · Old-city lanes · Rooftop dinners</span></div></article>
+ </div>
+</div></section>
+<section class="section" id="how"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">Simple by design</div><h2>Three steps to takeoff.</h2></div><p>Keep the planning light, so the actual trip can be the main event.</p></div>
+ <div class="steps"><article class="step"><span class="step-number">01 / SET YOUR LIMITS</span><h3>Tell us what works</h3><p>Choose a destination, how long you have and the total budget you want to stick to.</p></article><article class="step"><span class="step-number">02 / CONNECT THE DOTS</span><h3>Shape your itinerary</h3><p>Build a plan that considers the pieces together: how you get there, where you stay and what you do.</p></article><article class="step"><span class="step-number">03 / GO MAKE MEMORIES</span><h3>Travel with a plan</h3><p>Review your estimated costs, fine-tune the details and confirm bookings with providers.</p></article></div>
+</div></section>
+<section class="wrap" style="padding-bottom:65px"><div class="cta-band"><div><h2>More of the world.<br>Less of the spreadsheet.</h2><p>Your next good story starts with a simple plan.</p></div><a class="btn lime" href="#planner">Plan with Ghumi ↗</a></div></section>
+</main>
+<footer class="wrap footer"><div class="footer-main"><div><a class="brand" href="#home"><span class="brand-mark">↗</span> ghumi<span style="color:#91ad54">.</span></a><p>Thoughtful trip planning for real-life budgets.<br>Less logistics, more living.</p></div><div class="footer-links"><a href="#how">How it works</a><a href="#planner">Trip planner</a><a href="#discover">Destinations</a><a href="mailto:hello@ghumi.travel">Contact</a></div></div><div class="copyright"><span>© 2026 Ghumi. Made for the curious.</span><span>Plan thoughtfully. Wander freely.</span></div></footer>
+<div class="toast" id="toast" role="status">Your sample plan is ready.</div>
+<script>
+const $ = id => document.getElementById(id);
+const inr = n => '₹' + Math.round(n).toLocaleString('en-IN');
+const destinationSelect = $('destination');
+$('budget').addEventListener('input', () => $('budgetOutput').textContent = inr($('budget').value));
+const activities = {
+ Goa: [
+  ['Arrive & find your rhythm','Overland travel · Check-in · Sunset by the beach'],
+  ['Local finds & slow exploring','Breakfast spot · Heritage lanes · Beach time'],
+  ['One last wander','Market stroll · Local lunch · Return journey'],
+  ['A day beyond the coast','Quiet beach · Local village · Sunset viewpoint'],
+  ['Take the scenic way','Morning swim · Brunch · Slow afternoon']
+ ],
+ Coorg: [
+  ['Into the green','Travel to the hills · Check-in · Coffee-country sunset'],
+  ['Forest air & coffee trails','Estate visit · Local lunch · Viewpoint'],
+  ['A slow morning','Breakfast · Short nature walk · Return journey'],
+  ['Find a hidden corner','Waterfall area · Local café · Sunset'],
+  ['One more cup of coffee','Estate stroll · Brunch · Return journey']
+ ],
+ Udaipur: [
+  ['Arrive by the lake','Check-in · Old-city walk · Lakeside sunset'],
+  ['Palaces & local flavours','Heritage visit · Local thali · Lakefront evening'],
+  ['One last view','Morning market · Café stop · Return journey'],
+  ['A day in the old city','Craft lanes · Museum stop · Rooftop view'],
+  ['Slow start, scenic finish','Lake walk · Brunch · Return journey']
+ ],
+ Mysuru: [
+  ['A royal welcome','Arrive · Check-in · Evening city stroll'],
+  ['Palaces & local plates','Palace visit · Mysore-style lunch · Market walk'],
+  ['Coffee before home','Morning gardens · Breakfast · Return journey'],
+  ['Beyond the centre','Local neighbourhood · Green escape · Dinner'],
+  ['A little more Mysuru','Slow morning · Local snacks · Return journey']
+ ],
+ Hampi: [
+  ['Arrive among the boulders','Travel · Check-in · Riverside walk'],
+  ['History in the landscape','Temple trail · Local lunch · Sunset viewpoint'],
+  ['A final sunrise','Early viewpoint · Breakfast · Return journey'],
+  ['Explore at your pace','Village lanes · Heritage sites · Golden-hour views'],
+  ['One more ancient trail','Morning walk · Local meal · Return journey']
+ ],
+ Rishikesh: [
+  ['Arrive by the river','Check-in · Riverside stroll · Evening aarti area'],
+  ['Trails & river views','Bridge walk · Café stop · Nature time'],
+  ['A calm goodbye','Morning by the river · Breakfast · Return journey'],
+  ['A little more outdoors','Easy nature walk · Local lunch · Riverside evening'],
+  ['Slow morning, fresh air','Café breakfast · Market stroll · Return journey']
+ ]
+};
+function generatePlan(){
+ const dest=$('destination').value, origin=$('origin').value, days=Number($('days').value), budget=Number($('budget').value), style=$('travelStyle').value;
+ const styleName={budget:'Budget-friendly & local',balanced:'Comfort & adventure',comfort:'Comfort-first & curated'}[style];
+ const factors={budget:.82,balanced:1,comfort:1.25};
+ const wanted=budget*factors[style];
+ const baseShare={budget:[.34,.25,.20,.14,.07],balanced:[.38,.28,.18,.10,.06],comfort:[.42,.27,.17,.09,.05]}[style];
+ const weights=baseShare.slice(0,days); const weightTotal=weights.reduce((a,b)=>a+b,0);
+ const dayBudgets=weights.map(w=>wanted*w/weightTotal);
+ const placeActivities=activities[dest]||activities.Goa;
+ $('previewTitle').textContent=`Your ${days}-day ${dest} escape`;
+ $('previewSub').textContent=`Starting in ${origin} · ${styleName}`;
+ $('totalCost').textContent=inr(wanted);
+ $('perDay').textContent=inr(wanted/days);
+ $('buffer').textContent=inr(Math.max(0,budget-wanted));
+ $('dayList').innerHTML=placeActivities.slice(0,days).map((a,i)=>`<div class="day"><span class="day-number">DAY ${String(i+1).padStart(2,'0')}</span><div><h4>${a[0]}</h4><p>${a[1]}</p></div><span class="price">${inr(dayBudgets[i])}</span></div>`).join('');
+ $('planNote').textContent=`Illustrative ${styleName.toLowerCase()} estimate for ${dest}, starting from ${origin}. This is a sample allocation, not a live quote or confirmed booking. Actual costs depend on dates, transport, availability, group size and choices. Keep a buffer and verify prices before booking.`;
+}
+$('tripForm').addEventListener('submit',e=>{e.preventDefault();generatePlan();$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2400)});
+document.querySelectorAll('.destination').forEach(card=>{
+ const choose=()=>{destinationSelect.value=card.dataset.dest;generatePlan();$('planner').scrollIntoView({behavior:'smooth'});};
+ card.addEventListener('click',choose);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});
+});
+generatePlan();
+</script>
+<script>
+        const script = document.createElement('script');
+        script.src = "https://assets-chatflow.pabbly.com/production/ai-assistant/chat-widget/chat-widget.min.js?s_id=6acdc0e4edfe127a2ce25b30&a_id=6acdc15ae378ffef8df1ca27&t=" + Date.now();
+        document.body.appendChild(script);
+</script>
+</body>
+</html>
